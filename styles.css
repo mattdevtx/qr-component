@@ -1,0 +1,108 @@
+/* 
+======
+fonts
+======
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* 
+==========
+variables
+==========
+*/
+
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+	--fs-paragraph: 15px;
+	--ff-primary: 'Outfit', sans-serif;
+	--fw-400: 400;
+	--fw-700: 700;
+}
+
+/*
+======
+reset
+======
+*/
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 
+==============
+global styles
+==============
+*/
+
+body {
+	background: var(--light-gray);
+	font-family: var(--ff-primary);
+}
+
+main {
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/* 
+=============
+class styles
+=============
+*/
+
+.card {
+	width: 327px;
+	height: 500px;
+	background: var(--clr-white);
+	margin: 1.5rem;
+	padding: 1rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.qr-code {
+	border-radius: 10px;
+	margin-bottom: 1.75rem;
+}
+
+.card__title {
+	font-size: 1.35rem;
+	color: var(--dark-blue);
+	padding: 0 0.35rem;
+	margin-bottom: 1rem;
+}
+
+.card__text {
+	font-size: var(--fs-paragraph);
+	color: var(--grayish-blue);
+	margin: 0 1.5rem 1rem 1.5rem;
+}
+
+/* 
+============
+attribution
+============
+*/
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
